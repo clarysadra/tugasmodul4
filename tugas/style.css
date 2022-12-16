@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family:'Arial', Courier, monospace;
+}
+
+
+/* Style the header */
+
+header {
+    
+    background-color: blue;
+    padding: 30px;
+    text-align: center , justify;
+    font-size: 35px;
+    color: white;
+        
+}
+
+nav {
+    float: left;
+    width: 10%;
+    height: 550px;
+    background: black;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 90%;
+    background-color: orange;
+    height: 550px;
+    text-align: left;
+    font-size: 18px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    nav,article {
+        width: 100px;
+        height: auto;
+    }
+}
